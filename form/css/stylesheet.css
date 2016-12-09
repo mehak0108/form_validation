@@ -1,0 +1,12 @@
+.bg{
+	background-image: url("../img/pic2.jpg");
+	height: 100%;
+	position: fixed;
+	width: 100%;
+}
+
+.bg p{
+	font-size: 300%;
+	text-align: center;
+	margin-top: 15%;
+}
