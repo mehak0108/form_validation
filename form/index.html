@@ -1,0 +1,42 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://use.fontawesome.com/e618db8b78.js"></script>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+    <div class="bg">
+    	<div class="form">
+    		<div class="start">
+    		  <p class="start_text">Say Hi..!!</p>
+    		</div>  
+    		  <p class="start_text2"><b>Please complete the details.</b></p>
+    			<form name="signUp" action="action.html" onsubmit="return check()">
+    			   <p class="child1"><b>Name:</b></p><br><input type="text" name="fname" id="child1" onblur="nameValidate()"><span id="error1"></span>
+    			   <p class="child2"><b>Mobile:</b></p><br><input type="tel" name="mob" id="child2" onblur="mobValidate()"><span id="error2"></span><br>
+    			   <p class="child2"><b>Date of birth:</b></p><br><input type="date" name="bday" id="child3" >
+  				   <p class="child2"><b>Email-Id:</b></p><br><input type="email" name="email" id="child4" onblur="emailValidate()"><span id="error3"></span>
+  				   <p class="child2"><b>New Password:</b></p><br>
+  				   <input type="password" name="password1" id="child2" onblur="pwdValidate()"><span id="error4"></span>
+             <label for="password"></label>
+                   <p class="child2"><b>Re-enter the password:</b></p><br>
+                   <input type="password" name="password2" id="child2">
+             <label for="password"></label><br><br>
+  			       <input type="radio" name="gender" value="male" class="child2"><b>Male</b>
+                   <input type="radio" name="gender" value="female" ><b>Female</b><br><br>
+                   <input type="checkbox" name="choice1" class="child2" >Keep me logged in when using this computer.<br>
+                   <input type="checkbox" name="choice2" class="child2">Email me a weekly newsletter.<br>
+  				   <button class="button" onclick="return pwdMatch()"><span><b>Sign up</b></span></button>
+    			</form>   
+    	</div>
+    </div>
+    </header>
+
+</body>
+</html>
